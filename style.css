@@ -28,5 +28,15 @@ p {
 .outline {
     border: 2px solid black;
     border-radius: 5px;
+    margin: 2%;
+}
+
+.card {
+    background-color: white;
+}
+
+.card-question {
+    background-color: blueviolet;
+    color: white;
 }
 
