@@ -7,6 +7,7 @@ var startButton = document.querySelector(".start-button");
 var timeEl = document.querySelector("#time-display");
 
 
+
 let timeLeft = 75;
 
 function setTimer () {
@@ -22,6 +23,10 @@ function setTimer () {
           }
 
     }, 100); 
+}
+
+function sendMessage() {
+    alert("Game Over!");
 }
 
 
