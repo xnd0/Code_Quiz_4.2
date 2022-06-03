@@ -6,7 +6,43 @@
 var startButton = document.querySelector(".start-button");
 var timeEl = document.querySelector("#time-display");
 
+questionArray = [{
+    question: "What is the 1st question?",
+    answer1: "1(correct)",
+    answer2: "2",
+    answer3: "3",
+    answer4: "4",
+    correctProp: "1",
+},
 
+{
+    question: "What is the 2nd question?",
+    answer1: "1",
+    answer2: "2(correct)",
+    answer3: "3",
+    answer4: "4",
+    correctProp: "1",
+},
+
+{
+    question: "What is the 3rd question?",
+    answer1: "1",
+    answer2: "2",
+    answer3: "3(correct)",
+    answer4: "4",
+    correctProp: "3",
+},
+
+{
+    question: "What is the 4th question?",
+    answer1: "1",
+    answer2: "2",
+    answer3: "3",
+    answer4: "4(correct)",
+    correctProp: "4",
+},
+
+]
 
 let timeLeft = 75;
 
