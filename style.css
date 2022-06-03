@@ -31,6 +31,19 @@ p {
     margin: 2%;
 }
 
+.intro {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.start-button {
+    /* align-self: center; */
+    min-width: 120px;
+}
+
 .card {
     background-color: white;
 }
