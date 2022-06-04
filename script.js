@@ -21,38 +21,38 @@ let currentQuestion = 0;
 
 // Quiz Question Content //
 let questionArray = [{
-    question: "What is the 1st question?",
-    answer1: "1(correct)",
-    answer2: "2",
-    answer3: "3",
-    answer4: "4",
+    question: "How do you print to the console?",
+    answer1: "console.log",
+    answer2: "console.tree",
+    answer3: "console.frog",
+    answer4: "console.print",
     correctProp: "answer1",
 },
 
 {
-    question: "What is the 2nd question?",
-    answer1: "1",
-    answer2: "2(correct)",
-    answer3: "3",
-    answer4: "4",
+    question: "Which is NOT one of the primitive types?",
+    answer1: "string",
+    answer2: "yarn",
+    answer3: "number",
+    answer4: "boolean",
     correctProp: "answer2",
 },
 
 {
-    question: "What is the 3rd question?",
-    answer1: "1",
-    answer2: "2",
-    answer3: "3(correct)",
-    answer4: "4",
+    question: "How do you add an item to the front of an array?",
+    answer1: ".sort(item)",
+    answer2: ".push(item)",
+    answer3: ".unshift(item)",
+    answer4: ".pop(item)",
     correctProp: "answer3",
 },
 
 {
-    question: "What is the 4th question?",
-    answer1: "1",
-    answer2: "2",
-    answer3: "3",
-    answer4: "4(correct)",
+    question: "Objects are a collection of _________?",
+    answer1: "cantaloupes and pears",
+    answer2: "sea-lion chairs",
+    answer3: "fleece and hair",
+    answer4: "key-value pairs",
     correctProp: "answer4",
 }
 ];
