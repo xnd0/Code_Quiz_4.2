@@ -3,9 +3,15 @@
 // ---------------------- //
 
 
+// Declare Variables //
 var startButton = document.querySelector(".start-button");
 var timeEl = document.querySelector("#time-display");
 
+
+let timeLeft = 75;
+
+
+// Quiz Question Content //
 questionArray = [{
     question: "What is the 1st question?",
     answer1: "1(correct)",
@@ -44,13 +50,14 @@ questionArray = [{
 ]
 
 
+// Functions //
 
 function displayCard() {
     
 }
 
 
-let timeLeft = 75;
+
 
 function setTimer () {
     var timerInterval = setInterval(function() {
@@ -63,18 +70,18 @@ function setTimer () {
             // Calls function to create and append image
             sendMessage();
           }
-
     }, 100); 
 }
+
 
 function sendMessage() {
     alert("Game Over!");
 }
 
 
-
 function playGame() {
     setTimer();
+    displayCard
 
 }
 
