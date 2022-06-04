@@ -14,7 +14,7 @@ let btn4 = document.querySelector("#btn4");
 
 
 
-let timeLeft = 75;
+let timeLeft = 45;
 let currentQuestion = 0;
 
 
@@ -86,6 +86,7 @@ function checkAnswer(choice) {
         displayCard();
     } else {
         alert("wrong!");
+        timeLeft = timeLeft - 10;
         currentQuestion++;
         displayCard();
     }
@@ -104,7 +105,7 @@ function setTimer () {
             // Calls function to create and append image
             sendMessage();
           }
-    }, 100); 
+    }, 1000); 
 }
 
 
