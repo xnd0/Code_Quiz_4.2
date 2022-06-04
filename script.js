@@ -9,6 +9,7 @@ var timeEl = document.querySelector("#time-display");
 
 
 let timeLeft = 75;
+let currentQuestion = 0;
 
 
 // Quiz Question Content //
@@ -53,7 +54,10 @@ questionArray = [{
 // Functions //
 
 function displayCard() {
-    
+    let q = questionArray[currentQuestion];
+
+    askQuestion.textContent = q.question
+
 }
 
 
@@ -81,7 +85,7 @@ function sendMessage() {
 
 function playGame() {
     setTimer();
-    displayCard
+    displayCard();
 
 }
 
