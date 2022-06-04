@@ -7,9 +7,16 @@
 var startButton = document.querySelector(".start-button");
 var timeEl = document.querySelector("#time-display");
 
+var btn1 = document.querySelector("#btn1");
+var btn2 = document.querySelector("#btn2");
+var btn3 = document.querySelector("#btn3");
+var btn4 = document.querySelector("#btn4");
+
+
 
 let timeLeft = 75;
 let currentQuestion = 0;
+
 
 
 // Quiz Question Content //
@@ -56,7 +63,12 @@ questionArray = [{
 function displayCard() {
     let q = questionArray[currentQuestion];
 
-    askQuestion.textContent = q.question
+    // Questions and Answers display
+    askQuestion.textContent = q.question;
+    btn1.textContent = q.answer1;
+    btn2.textContent = q.answer2;
+    btn3.textContent = q.answer3;
+    btn4.textContent = q.answer4;
 
 }
 
