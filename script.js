@@ -41,8 +41,14 @@ questionArray = [{
     answer4: "4(correct)",
     correctProp: "4",
 },
-
 ]
+
+
+
+function displayCard() {
+    
+}
+
 
 let timeLeft = 75;
 
@@ -66,6 +72,14 @@ function sendMessage() {
 }
 
 
-startButton.addEventListener("click", setTimer);
+
+function playGame() {
+    setTimer();
+
+}
+
+
+startButton.addEventListener("click", playGame);
+// startButton.addEventListener("click", setTimer);
 
 
