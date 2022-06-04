@@ -119,7 +119,8 @@ function setTimer () {
 
 
 function gameOver() {
-    alert("Game Over!");
+    finalScore = timeLeft
+    alert("Game Over! your score is: " + finalScore);
 }
 
 
