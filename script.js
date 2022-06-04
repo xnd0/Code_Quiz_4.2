@@ -120,7 +120,8 @@ function setTimer () {
 
 function gameOver() {
     finalScore = timeLeft
-    alert("Game Over! your score is: " + finalScore);
+    const initials = prompt("Game Over! your score is: " + finalScore + "\nPlease enter your initials");
+    alert(initials);
 }
 
 
