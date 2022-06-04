@@ -7,10 +7,10 @@
 var startButton = document.querySelector(".start-button");
 var timeEl = document.querySelector("#time-display");
 
-var btn1 = document.querySelector("#btn1");
-var btn2 = document.querySelector("#btn2");
-var btn3 = document.querySelector("#btn3");
-var btn4 = document.querySelector("#btn4");
+let btn1 = document.querySelector("#btn1");
+let btn2 = document.querySelector("#btn2");
+let btn3 = document.querySelector("#btn3");
+let btn4 = document.querySelector("#btn4");
 
 
 
@@ -20,13 +20,13 @@ let currentQuestion = 0;
 
 
 // Quiz Question Content //
-questionArray = [{
+let questionArray = [{
     question: "What is the 1st question?",
     answer1: "1(correct)",
     answer2: "2",
     answer3: "3",
     answer4: "4",
-    correctProp: "1",
+    correctProp: "answer1",
 },
 
 {
@@ -35,7 +35,7 @@ questionArray = [{
     answer2: "2(correct)",
     answer3: "3",
     answer4: "4",
-    correctProp: "1",
+    correctProp: "answer2",
 },
 
 {
@@ -54,8 +54,8 @@ questionArray = [{
     answer3: "3",
     answer4: "4(correct)",
     correctProp: "4",
-},
-]
+}
+];
 
 
 // Functions //
@@ -73,6 +73,20 @@ function displayCard() {
 }
 
 
+// Logic for checking answers + follow up actions
+function checkAnswer(choice) {
+
+    
+    let rightAnswer = questionArray[currentQuestion].correctProp; 
+
+    if (choice == rightAnswer) {
+        alert("correct!");
+        console.log("Corrrrhect Answer");
+    } else {
+        alert("wrong!");
+    }
+
+}
 
 
 function setTimer () {
