@@ -44,7 +44,7 @@ let questionArray = [{
     answer2: "2",
     answer3: "3(correct)",
     answer4: "4",
-    correctProp: "3",
+    correctProp: "answer3",
 },
 
 {
@@ -53,7 +53,7 @@ let questionArray = [{
     answer2: "2",
     answer3: "3",
     answer4: "4(correct)",
-    correctProp: "4",
+    correctProp: "answer4",
 }
 ];
 
@@ -82,8 +82,12 @@ function checkAnswer(choice) {
     if (choice == rightAnswer) {
         alert("correct!");
         console.log("Corrrrhect Answer");
+        currentQuestion++;
+        displayCard();
     } else {
         alert("wrong!");
+        currentQuestion++;
+        displayCard();
     }
 
 }
