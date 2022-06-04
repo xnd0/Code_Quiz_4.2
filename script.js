@@ -16,6 +16,7 @@ let btn4 = document.querySelector("#btn4");
 
 let timeLeft = 45;
 let currentQuestion = 0;
+let finalScore = 0;
 
 
 
@@ -83,11 +84,19 @@ function checkAnswer(choice) {
         alert("correct!");
         console.log("Corrrrhect Answer");
         currentQuestion++;
+        //check if games over yet
+        if (currentQuestion >= 4) {      
+            gameOver();
+        } 
         displayCard();
     } else {
         alert("wrong!");
         timeLeft = timeLeft - 10;
         currentQuestion++;
+        //check if games over yet
+        if (currentQuestion >= 4) {      
+            gameOver();
+        } 
         displayCard();
     }
 
@@ -103,13 +112,13 @@ function setTimer () {
             // Stops execution of action at set interval
             clearInterval(timerInterval);
             // Calls function to create and append image
-            sendMessage();
+            gameOver();
           }
     }, 1000); 
 }
 
 
-function sendMessage() {
+function gameOver() {
     alert("Game Over!");
 }
 
