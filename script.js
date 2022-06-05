@@ -143,6 +143,8 @@ function gameOver() {
 function playGame() {
     setTimer();
     displayCard();
+    qCard.style.display="block";
+    introCard.style.display="none";
 
 }
 
