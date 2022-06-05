@@ -108,7 +108,7 @@ function setTimer () {
         timeLeft--;
         timeEl.textContent = timeLeft;
 
-        if(timeLeft === 0) {
+        if(timeLeft <= 0) {
             // Stops execution of action at set interval
             clearInterval(timerInterval);
             // Calls function to create and append image
@@ -122,6 +122,22 @@ function gameOver() {
     finalScore = timeLeft
     const initials = prompt("Game Over! your score is: " + finalScore + "\nPlease enter your initials");
     alert(initials);
+
+    let playerScore = {
+        initials: initials,
+        score: finalScore,
+    };
+
+
+    // Get the Highscore List
+    let highScoreList = JSON.parse(localStorage.getItem("highScoreList")) || [];
+
+    // Saves player's score to local storage
+    highScoreList.push(playerScore);
+    let saveScore = JSON.stringify(highScoreList);
+    localStorage.setItem("highScoreList", saveScore);
+
+
 }
 
 
