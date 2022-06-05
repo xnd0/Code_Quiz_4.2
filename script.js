@@ -32,7 +32,7 @@ let questionArray = [{
 
 {
     question: "If you wanted to lower all the characters in a string, Which one of these would work?",
-    answer1: ".tolowercase()",
+    answer1: ".tolowrcase()",
     answer2: ".toLowerCase()",
     answer3: ".lowerCase()",
     answer4: ".lowerCaseify",
@@ -129,8 +129,8 @@ function setTimer () {
 
 function gameOver() {
     finalScore = timeLeft
+    qCard.style.display="none";
     const initials = prompt("Game Over! your score is: " + finalScore + "\nPlease enter your initials");
-    alert(initials);
 
     let playerScore = {
         initials: initials,
