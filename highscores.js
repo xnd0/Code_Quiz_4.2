@@ -11,7 +11,7 @@ function displayScores() {
 
 
         const scoreElement = document.createElement("li");
-        scoreElement.textContent = scores
+        scoreElement.textContent = scores[index].initials + " : " + scores[index].score;
         scoreList.appendChild(scoreElement); 
         
     }

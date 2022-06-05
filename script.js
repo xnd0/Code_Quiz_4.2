@@ -128,8 +128,7 @@ function gameOver() {
         score: finalScore,
     };
 
-
-    // Get the Highscore List
+    // Gets the Highscore List OR make a new one if none saved yet
     let highScoreList = JSON.parse(localStorage.getItem("highScoreList")) || [];
 
     // Saves player's score to local storage
