@@ -62,6 +62,8 @@ li {
 
 .card {
     background-color: white;
+    margin: 3%;
+    padding:10px;
 }
 
 .card-question {

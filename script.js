@@ -31,6 +31,15 @@ let questionArray = [{
 },
 
 {
+    question: "If you wanted to lower all the characters in a string, Which one of these would work?",
+    answer1: ".tolowercase()",
+    answer2: ".toLowerCase()",
+    answer3: ".lowerCase()",
+    answer4: ".lowerCaseify",
+    correctProp: "answer2",
+},
+
+{
     question: "Which is NOT one of the primitive types?",
     answer1: "string",
     answer2: "yarn",
@@ -81,20 +90,20 @@ function checkAnswer(choice) {
     let rightAnswer = questionArray[currentQuestion].correctProp; 
 
     if (choice == rightAnswer) {
-        alert("correct!");
-        console.log("Corrrrhect Answer");
+        alert("That is correct! \nonto the next question \n\npress -enter- or click OK");
+        
         currentQuestion++;
         //check if games over yet
-        if (currentQuestion >= 4) {      
+        if (currentQuestion >= 5) {      
             gameOver();
         } 
         displayCard();
     } else {
-        alert("wrong!");
+        alert("Sorry, that is incorrect. \n10 seconds will be deducted. Onto the next question \n\npress -enter- or click OK");
         timeLeft = timeLeft - 10;
         currentQuestion++;
         //check if games over yet
-        if (currentQuestion >= 4) {      
+        if (currentQuestion >= 5) {      
             gameOver();
         } 
         displayCard();
@@ -111,7 +120,7 @@ function setTimer () {
         if(timeLeft <= 0) {
             // Stops execution of action at set interval
             clearInterval(timerInterval);
-            // Calls function to create and append image
+            // Calls function for end-of-game
             gameOver();
           }
     }, 1000); 
@@ -150,6 +159,4 @@ function playGame() {
 
 
 startButton.addEventListener("click", playGame);
-// startButton.addEventListener("click", setTimer);
-
 
